@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Blog</title>
+  </head>
+  <body>
+    <section class="max-w-screen-xl min-h-screen mx-auto">
+      <header class="bg-white shadow-lg mt-2 p-4 border rounded-md">
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="flex items-center gap-2">
+            <img class="w-8 h-8" src="./assets/logo.png" alt="Logo" />
+            <h1 class="text-2xl font-bold text-gray-800">DevBoard</h1>
+          </div>
+          <button
+            id="backBtn"
+            class="bg-[#4664F7] text-white px-4 py-2 rounded-lg font-semibold completed-btn"
+          >
+            Back to Desk
+          </button>
+        </div>
+      </header>
+      <h2 class="mx-auto mt-4 text-center text-2xl font-bold mb-8">Blog</h2>
+      <!-- question-1  -->
+      <section class="mb-3 bg-white shadow-lg p-4 border rounded-md">
+        <div>
+          <h2 class="text-xl font-semibold text-gray-800">
+            Question-1: What are the different ways to select an element in the
+            DOM?
+          </h2>
+          <hr class="border-dashed border-[#D0DAF3] mb-5 mt-5" />
+          <p class="text-gray-600 font-bold">
+            getElementById: <br />
+            getElementsByClassName: <br />
+            getElementsByTagName: <br />
+            querySelector: <br />
+            querySelectorAll:
+          </p>
+        </div>
+      </section>
+      <!-- question-2  -->
+      <section class="bg-white shadow-lg p-4 border rounded-md mt-3">
+        <div>
+          <h2 class="text-xl font-semibold text-gray-800">
+            Question-2: Difference between innerHTML, innerText, and textContent
+          </h2>
+          <hr class="border-dashed border-[#D0DAF3] mb-5 mt-5" />
+          <p class="text-gray-600 font-bold">
+            innerHTML: Gets HTML content of an element. <br />
+            innerText: Gets innerText text content of an element. <br />
+            textContent: Gets the text content of an element. <br />
+          </p>
+        </div>
+      </section>
+      <!-- question-3  -->
+      <section class="bg-white shadow-lg p-4 border rounded-md mt-3">
+        <div>
+          <h2 class="text-xl font-semibold text-gray-800">
+            Question-3: Event delegation in the DOM
+          </h2>
+          <hr class="border-dashed border-[#D0DAF3] mb-5 mt-5" />
+          <p class="text-gray-600 font-bold">
+            I Don't know about this question. <br />
+            i found it in online blog. <br />
+            Event delegation involves attaching a single event listener to a
+            parent element to handle events from child elements. It leverages
+            event bubbling to capture events from child elements without needing
+            individual listeners on each child.
+          </p>
+        </div>
+      </section>
+      <!-- question-4  -->
+      <section class="bg-white shadow-lg p-4 border rounded-md mt-3">
+        <div>
+          <h2 class="text-xl font-semibold text-gray-800">
+            Question-4: Event bubbling in the DOM
+          </h2>
+          <hr class="border-dashed border-[#D0DAF3] mb-5 mt-5" />
+          <p class="text-gray-600 font-bold">
+            I Don't understand about this this. <br />
+            i found it in online . <br />
+            Event bubbling is a type of event propagation where the event first
+            triggers on the innermost target element, and then successively
+          </p>
+        </div>
+      </section>
+      <!-- question-5  -->
+      <section class="bg-white shadow-lg p-4 border rounded-md mt-3">
+        <div>
+          <h2 class="text-xl font-semibold text-gray-800">
+            Question-5: Creating, adding, and removing elements using JavaScript
+          </h2>
+          <hr class="border-dashed border-[#D0DAF3] mb-5 mt-5" />
+          <p class="text-gray-600 font-bold">
+            Create: const newElement = document.createElement('tag'); <br />
+            Add: parentElement.appendChild(newElement); <br />Remove:
+            parentElement.removeChild(newElement);
+          </p>
+        </div>
+      </section>
+    </section>
+    <script>
+      const backBtn = document.getElementById("backBtn");
+      backBtn.addEventListener("click", () => {
+        window.location.href = "./index.html";
+      });
+    </script>
+  </body>
+</html>
